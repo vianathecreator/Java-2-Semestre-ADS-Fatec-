@@ -10,7 +10,7 @@ public class EstSeqLT01_21 {
     }
     
     public static void CalculoMedia() {
-        media = (nota1 + nota2 + nota3 + nota4) / 2;
+        media = (nota1 + nota2 + nota3 + nota4) / 4;
     }
 
     public static void main (String[] args) {
