@@ -13,6 +13,9 @@ public class ExVetLT02_01 {
 
             double resu_media = calcularMedia(valores);
                 JOptionPane.showMessageDialog(null, "A média dos valores entre 10 e 200 é: " + resu_media );
+
+            int resu_impar = verImpares(valores);
+                JOptionPane.showMessageDialog(null, "A soma dos impares é: " + resu_impar);
     }
 
     static double calcularMedia(int valores[]) {
@@ -28,7 +31,22 @@ public class ExVetLT02_01 {
     }
     resultado = media/contador;
     return resultado;
-
-
 }        
+
+    static int verImpares(int valores[]) {
+        int i;
+        int impares = 0;
+        int contador = 0;
+        int resultadoim = 0;
+        for (i=0; i<5; i++) {
+            if (valores[i] % 2 != 0) {
+                impares += valores[i];
+                contador++;
+            }
+        }
+        resultadoim = impares;
+        return resultadoim;
+
+    }
+
 }
